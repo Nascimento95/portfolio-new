@@ -1,5 +1,5 @@
 body{
-    background: url('/picture/background.jpg') no-repeat;
+    /* background: url('/picture/background.jpg') no-repeat; */
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -51,6 +51,8 @@ li{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: url('/picture/IMG_20220324_152934.jpg')  right no-repeat;
+    background-size: 60% ;
 }
 .title{
     /* border: 1px solid black; */
@@ -66,7 +68,7 @@ h1{
 }
 .picture-me{
     /* border: 1px solid black; */
-    background: url('/picture/Photo\ .jpg');
+    /* background: url('/picture/Photo\ .jpg'); */
     background-size: cover;
     width: 50%;
     height: 94vh;
@@ -197,7 +199,7 @@ h3{
 /* partie container-formation-experience */
 .container-formation-experience{
     width: 100%;
-    height: 120px;
+    height: 140px;
     display: flex;
     justify-content: space-around;
     /* border: 1px solid black; */
@@ -300,14 +302,24 @@ height: 35px;
 .project1{
     width: 300px;
     height: 300px;
-    border: 1px solid black;
-    background: url('/picture/seljalandsfoss-g7fbe931f8_640.jpg');
-    background-size: cover;
+    background: gray;
+    /* background: url('/picture/seljalandsfoss-g7fbe931f8_640.jpg');
+    background-size: cover; */
+    box-shadow: -3px -3px 10px black;
 }
 .project2{
     width: 300px;
     height: 450px;
-    border: 1px solid black;
-    background: url('/picture/nature-g55d68656e_640.jpg');
-    background-size: cover;
+    /* background: url('/picture/Capture\ d’écran\ 2022-03-24\ à\ 14.59.41.png') no-repeat;
+    background-size: contain; */
+    box-shadow: -3px -3px 10px black;
 }
+.twiter{
+    width: 300px;
+    height: 200px;
+    
+}
+/* .project1:hover{
+    width: 310px;
+    height: 310px;
+} */
