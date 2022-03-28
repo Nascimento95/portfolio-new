@@ -51,8 +51,8 @@ li{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: url('/picture/IMG_20220324_152934.jpg')  right no-repeat;
-    background-size: 60% ;
+    background: url('/picture/header-img.jpg') no-repeat ;
+    background-size: 100% 100%;
 }
 .title{
     /* border: 1px solid black; */
