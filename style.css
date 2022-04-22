@@ -156,7 +156,7 @@ h3{
 }
 .pour-css{
     position: relative;
-    top: -38px;
+    top: -18px;
 }
 
 .javascript{
@@ -175,7 +175,7 @@ h3{
 }
 .pour-javascript{
     position: relative;
-    top: -38px;
+    top: -18px;
 }
 
 .react{
@@ -194,7 +194,7 @@ h3{
 }
 .pour-react{
     position: relative;
-    top: -38px;
+    top: -18px;
 }
 /* partie container-formation-experience */
 .container-formation-experience{
@@ -292,16 +292,15 @@ height: 35px;
     align-items: center;
 }
 .container-projects{
-    height: 100%;
+    height: 500px;
     margin-left: 50px;
-    
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 .project1{
     width: 300px;
-    height: 300px;
+    height: 200px;
     background: gray;
     /* background: url('/picture/seljalandsfoss-g7fbe931f8_640.jpg');
     background-size: cover; */
@@ -309,15 +308,19 @@ height: 35px;
 }
 .project2{
     width: 300px;
-    height: 450px;
+    height: 200px;
     /* background: url('/picture/Capture\ d’écran\ 2022-03-24\ à\ 14.59.41.png') no-repeat;
     background-size: contain; */
     box-shadow: -3px -3px 10px black;
 }
+
 .twiter{
     width: 300px;
     height: 200px;
-    
+}
+.deezer{
+    width: 300px;
+    height: 200px;
 }
 /* .project1:hover{
     width: 310px;
@@ -368,4 +371,45 @@ height: 35px;
     width: 20%;
     height: 20px;
     margin-top: 10px;
+}
+
+/* section test */
+.test{
+    width: 100%;
+    height: 500px;
+    background: salmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.octo{
+    /* width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    background: url("/picture/battleship.png");
+    background-size: cover; */
+    box-sizing : border-box;
+  position : relative;
+  width : 121.24356px;
+  height : 70px;
+  background-color : #008000;
+  margin : 35px 0;
+}
+.octo:before,
+.octo:after {
+content : "";
+  box-sizing : border-box;
+  position : absolute;
+  width : 0;
+  border-left : 60.62178px solid transparent;
+  border-right : 60.62178px solid transparent;
+}
+.octo:after {
+  top : 100%;
+  width : 0;
+  border-top : 35px solid #008000;
+}
+.octo:before {
+  bottom : 100%;
+  border-bottom : 35px solid #008000;
 }
