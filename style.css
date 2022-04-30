@@ -63,6 +63,9 @@ li{
 h1{
     font-size: 50px;
 }
+.bold-text{
+    font-weight: bold;
+}
 .text-profil{
     margin-top: 20px;
 }
@@ -77,7 +80,7 @@ h1{
 
 .about-me{
     width: 100%;
-    height: 500px;
+    height: 550px;
     background-color: rgb(245, 242, 242);
     color: black;
     /* border: 1px solid black; */
@@ -123,6 +126,11 @@ h3{
     height: 100%;
     text-align: justify;
     /* border: 1px solid black; */
+}
+
+.qui{
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 .cv{
     margin-top: 20px;
@@ -207,27 +215,33 @@ h3{
 .container-formation{
     display: flex;
     justify-content: space-between;
-    
+}
+h5{
+    width: 130px;
 }
 .formation{
     width: 40%;
-    height: 100%;
-    /* border: 1px solid black; */
+    height: 170px;
     background: white;
     text-align: justify;
 }
 .title-fomation{
     margin-top: 15px;
+    margin-left: 5px
 }
 .formation-containt{
-margin-top: 10px;
+margin: 10px 0px 0px 5px;
 width: 200px;
 height: 35px;
 /* border: 1px solid black; */
 }
 .formation-text{
-    margin-left: 50px;
+    margin-left: 30px;
+    padding: 5px;
     /* border: 1px solid black; */
+}
+.first-formation{
+    margin:3px 0px
 }
 .experience{
     width: 40%;
@@ -247,7 +261,11 @@ height: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+}
+.title-what-i-do{
+    color: white;
+    position: absolute;
+    left:50%
 }
 .ordi-icon{
     width: 50px;
@@ -278,24 +296,29 @@ height: 35px;
 /* section projet */
 .my-projects{
     width: 100%;
-    height: 900px;
+    height: 720px;
     background: white;
     text-align: center;
     color: black;
 }
 
 .container-all-projects{
-    height: 86%;
-    width: 100%;
-    display: flex;
+    /* height: 86%; */
+    /* width: 100%; */
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 70px;
 }
 .container-projects{
-    height: 500px;
-    margin-left: 50px;
+    /* height: 500px; */
+    /* margin-left: 50px; */
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: space-around;
 }
 .project1{
