@@ -328,6 +328,11 @@ height: 35px;
     /* background: url('/picture/seljalandsfoss-g7fbe931f8_640.jpg');
     background-size: cover; */
     box-shadow: -3px -3px 10px black;
+    transition: all 1s ease;
+}
+.twiter:hover{
+    transform: scale(1.22);
+    box-shadow: -3px -3px 10px black;
 }
 .project2{
     width: 300px;
@@ -340,6 +345,7 @@ height: 35px;
 .twiter{
     width: 300px;
     height: 200px;
+    transition: all 1s ease;
 }
 .deezer{
     width: 300px;
@@ -365,6 +371,18 @@ height: 35px;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    border:1px solid
+}
+.title-adress{
+    
+}
+.white{
+    background: white;
+    margin-bottom: 3px;
+}
+.white1{
+    background: white;
+    margin-bottom: 20px;
 }
 .two-input{
     width: 100%;
