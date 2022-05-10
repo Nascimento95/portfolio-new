@@ -1,6 +1,6 @@
 body{
-    background: url('/picture/background.jpg') no-repeat;
-    background-size: cover;
+    /* background: url('/picture/background.jpg') no-repeat; */
+    /* background-size: cover; */
     width: 100%;
     height: 100vh;
 }
@@ -16,7 +16,7 @@ body{
     text-decoration: none; 
     list-style-type: none;
 }
-a{
+.a_header{
     color: black;
 }
 .head{
@@ -260,7 +260,7 @@ height: 35px;
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:space-around;
 }
 .title-what-i-do{
     color: white;
@@ -371,10 +371,10 @@ height: 35px;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    border:1px solid
+    /* border:1px solid */
 }
 .title-adress{
-    
+    font-size: 22px;
 }
 .white{
     background: white;
@@ -413,6 +413,29 @@ height: 35px;
     height: 20px;
     margin-top: 10px;
 }
+
+/* footer */
+.footer{
+    width: 100%;
+    height: 300px;
+    background: black;
+    background: url('./picture/whatIDo.jpg');
+    background-size: cover;
+    display: flex;
+}
+.title_dev{
+    color: white;
+}
+.devTrotter{
+    height: 60px;
+}
+.nav_footer{
+    display: block;
+}
+.a_footer{
+    color:white;
+}
+
 
 /* section test */
 .test{
@@ -453,4 +476,176 @@ content : "";
 .octo:before {
   bottom : 100%;
   border-bottom : 35px solid #008000;
+}
+
+/* media queries */
+
+@media screen and (min-width: 949px) and ( max-width:1160px )
+{
+    .about-me{
+        height: 650px;
+    }
+    .formation{
+        margin-top: 70px;
+        width: 40%;
+        height: 200px;
+        background: white;
+        text-align: justify;
+    }
+    .container-formation{
+        display: block;
+        align-items: center;
+    }
+    .formation-text{
+        margin-left: 5px;
+        padding: 0px;
+    }
+}
+
+@media screen and (min-width: 716px) and (max-width: 938px) {
+    
+    .about-me{
+        height: 650px;
+    }
+    .formation{
+        margin-top: 70px;
+        width: 40%;
+        height: 200px;
+        background: white;
+        text-align: justify;
+    }
+    .container-formation{
+        display: block;
+        align-items: center;
+    }
+    .formation-text{
+        margin-left: 5px;
+        padding: 0px;
+    }
+    .my-projects{
+        height: 1020px;
+    }
+    .container-all-projects{
+        /* display: grid; */
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 70px;
+    }
+}
+@media screen and (min-width: 619px) and (max-width: 716px) {
+
+    .about-me{
+        height: 720px;
+    }
+    .formation{
+        margin-top: 120px;
+        width: 40%;
+        height: 240px;
+        background: white;
+        text-align: justify;
+    }
+    .container-formation{
+        display: block;
+        align-items: center;
+    }
+    .formation-text{
+        margin: 0px 5px;
+        padding: 0px;
+    }
+    .my-projects{
+        height: 1020px;
+    }
+    .container-all-projects{
+        /* display: grid; */
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 70px;
+    }
+}
+@media screen and (min-width: 100px) and (max-width: 619px) {
+    .head{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .my-profil{
+        height:50vh;
+    }
+
+    .about-me{
+        height: 1500px;
+    }
+    .container-stack{
+        height: 590px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-formation-experience{
+        margin-top: 50px;
+        height: 650px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .my-stack{
+        margin-top: 40px;
+    }
+    .formation{
+        width: 40%;
+        height: 300px;
+        background: white;
+        text-align: center;
+    }
+    .formation-containt{
+        text-align: center;
+    }
+    
+    .container-formation{
+        display: block;
+        align-items: center;
+    }
+    .formation-text{
+        margin: 0px 5px;
+        padding: 0px;
+    }
+    /* what i do */
+    .what-i-do{
+        height: 750px
+    }
+    .title-what-i-do{
+        color: white;
+        position: absolute;
+        left: 42%;
+    }
+    .filter{
+        display: flex;
+        flex-direction: column;
+    }
+    .my-projects{
+        height: 1750px;
+    }
+    .container-all-projects{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 70px;
+    }   
+    .adress{
+        width: 50%;
+    }
+    .contact{
+        flex-direction: column;
+        height: 500px;
+    } 
+    .form-contact{
+        width: 50%;
+    }
+    .btn-sub{
+        width: 25% ;
+    }
 }

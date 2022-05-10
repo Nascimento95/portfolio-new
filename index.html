@@ -15,10 +15,9 @@
             <h3>Marco Nascimento <br/>développeur web fullstack js  </br>
         </div>
         <nav>
-            <li>Home</li>
-            <a href="#about"><li>About</li></a>
-            <li>Works</li>
-            <li>Contact</li>
+            <a class="a_header" href="#about"><li>About</li></a>
+            <a class="a_header" href="#projects"><li>Works</li></a>
+            <a class="a_header" href="#contact"><li>Contact</li></a>
         </nav>
     </header>
     
@@ -142,9 +141,9 @@
             </div> 
         </div>
     </section>
-    <section class="my-projects">
+    <section id="projects" class="my-projects">
         <div class="title-about">
-            <h4><span class="bold-text">MES PROJETS</span></h4>
+            <h4 class="mes_projet"><span class="bold-text">MES PROJETS</span></h4>
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
@@ -194,10 +193,10 @@
             </div>
         </div>
     </section>
-    <section class="contact">
+    <section id="contact" class="contact">
 
         <div class="adress">
-            <h4 class="title-adress">Adress</h4>
+            <h4 class="title-adress">Contact</h4>
             <div class="line1 white"></div>
             <div class="line3 white1"></div>
             <p><span>Adresse :</span> 66bis rue de la chapelle</p>
@@ -218,12 +217,28 @@
             </form>
         </div>
     </section>
-
-    <section class="test">
+    <footer class="footer"> 
+        <div class="filter">
+            <div class="logo_society">
+                <img class="devTrotter" src="picture/logoDevtrotter.png" alt="logo">
+                <p class="title_dev">Devtrotter</p>
+                <p class="title_dev">studio de développement web</p>
+            </div>
+            <div class="nav_footer">
+                <nav class="nav_footer">
+                    <a class="a_footer" href="#about"><li>About</li></a>
+                    <a class="a_footer" href="#projects"><li>Works</li></a>
+                    <a class="a_footer" href="#contact"><li>Contact</li></a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <!-- <section class="test">
         <div class="octo"></div>
         <div class="octo"></div>
         <div class="octo"></div>
         <div class="octo"></div>
-    </section>
+    </section> -->
+    <script  src="index.js"></script>
 </body>
 </html>
