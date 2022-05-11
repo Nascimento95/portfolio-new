@@ -534,7 +534,6 @@ content : "";
     }
 }
 @media screen and (min-width: 619px) and (max-width: 716px) {
-
     .about-me{
         height: 720px;
     }
@@ -565,49 +564,76 @@ content : "";
     }
 }
 @media screen and (min-width: 100px) and (max-width: 619px) {
+    h1{
+        font-size: 25px;
+    }
+    .my-name{
+        display: none;
+    }
     .head{
+        opacity: 1;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        flex-direction: row;
+        /* justify-content: center;
+        align-items: center; */
     }
     .my-profil{
         height:50vh;
+    }
+    .picture-me{
+        height: 50vh;
     }
 
     .about-me{
         height: 1500px;
     }
     .container-stack{
-        height: 590px;
+        height: 565px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 20px;
+    }
+    .info-me{
+        width: 70%;
+    }
+    .my-stack{
+        width: 70%;
     }
     .container-formation-experience{
-        margin-top: 50px;
         height: 650px;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         align-items: center;
     }
     .my-stack{
         margin-top: 40px;
     }
+    .pour-css{
+        left: 28px;
+    }
+    .pour-javascript{
+        left: 28px;
+    }
+    .pour-react{
+        left: 28px;
+    }
     .formation{
-        width: 40%;
-        height: 300px;
+        width: 70%;
+        height: 230px;
         background: white;
         text-align: center;
     }
     .formation-containt{
         text-align: center;
+        width: 100%;
     }
-    
+    h5{
+        text-align: center;
+        width: 100%;
+    }
     .container-formation{
         display: block;
-        align-items: center;
     }
     .formation-text{
         margin: 0px 5px;
@@ -615,7 +641,7 @@ content : "";
     }
     /* what i do */
     .what-i-do{
-        height: 750px
+        height: 978px
     }
     .title-what-i-do{
         color: white;
