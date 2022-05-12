@@ -446,19 +446,19 @@ height: 35px;
     justify-content: center;
     align-items: center;
 }
-.octo{
-    /* width: 100px;
+/* .octo{
+    width: 100px;
     height: 100px;
     border: 1px solid black;
     background: url("/picture/battleship.png");
-    background-size: cover; */
+    background-size: cover;
     box-sizing : border-box;
   position : relative;
   width : 121.24356px;
   height : 70px;
   background-color : #008000;
   margin : 35px 0;
-}
+} */
 .octo:before,
 .octo:after {
 content : "";
@@ -585,7 +585,7 @@ content : "";
     }
 
     .about-me{
-        height: 1500px;
+        height: 1380px;
     }
     .container-stack{
         height: 565px;
@@ -597,6 +597,7 @@ content : "";
     .info-me{
         width: 70%;
     }
+
     .my-stack{
         width: 70%;
     }
