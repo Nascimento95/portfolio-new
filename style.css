@@ -301,6 +301,10 @@ height: 35px;
     text-align: center;
     color: black;
 }
+.container-title-projet{
+    display: flex;
+    justify-content: center;
+}
 
 .container-all-projects{
     /* height: 86%; */
@@ -315,11 +319,13 @@ height: 35px;
     grid-row-gap: 70px;
 }
 .container-projects{
-    /* height: 500px; */
-    /* margin-left: 50px; */
     display: flex;
-    /* flex-direction: column; */
     justify-content: space-around;
+}
+.container-projects-pro{
+    display: flex;
+    justify-content: space-around;
+    visibility: hidden;
 }
 .project1{
     width: 300px;
