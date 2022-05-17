@@ -16,6 +16,9 @@ body{
     text-decoration: none; 
     list-style-type: none;
 }
+a{
+    color: black;
+}
 .a_header{
     color: black;
 }
@@ -301,6 +304,10 @@ height: 35px;
 }
 .mes_projet{
     color:grey;
+    cursor: pointer;
+}
+.pro{
+    cursor: pointer;
 }
 .container-title-projet{
     display: flex;
@@ -393,13 +400,22 @@ height: 35px;
     background: white;
     margin-bottom: 20px;
 }
+.github{
+    display: flex;
+    align-items: center;
+}
 .two-input{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10px;
 }
 .input-style1{
-    width: 49%;
+    width: 48%;
+    padding: 2px
+}
+textarea{
+    padding: 2px;
 }
 .form-contact{
     width: 40%;

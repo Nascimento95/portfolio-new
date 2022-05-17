@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('TfL7n9lGS29mPLigj');
+        })();
+    </script>
     <title>Portfolio</title>
 </head>
 <body>
@@ -223,16 +230,21 @@
             <p><span>Adresse :</span> 66bis rue de la chapelle</p>
             <p><span>Mail :</span>marco-pereira@hotmail.fr</p>
             <p><span>Tèl :</span>0661585403</p>
+            <p class="github"><img src="https://img.icons8.com/ios-glyphs/30/000000/github.png"/><a href="https://github.com/Nascimento95">Github</a></p>
+            <p class="github"><img src="https://img.icons8.com/ios-glyphs/30/000000/linkedin.png"/><a href="https://www.linkedin.com/in/marco-paulo-nascimento-pereira-465678215/">Linkedin</a></p>
         </div>
         <div class="form-contact">
             <form action="">
             <div class="two-input">
-                <input class="input-style1" type="text" placeholder="Nom" name="" id="">
-                <input class="input-style1" type="text" placeholder="Prénom" name="" id="">
+                <input class="input-style1 name" type="text" placeholder="Nom" name="" id="">
+                <input class="input-style1 prenom" type="text" placeholder="Prénom" name="" id="">
             </div>
             <div class="text-area">
-                <input class="input-style" type="text" placeholder="Sujet" name="" id="">
-                <textarea name="" id="" placeholder="description..." cols="30" rows="10"></textarea>
+                <div class="two-input">
+                    <input class="input-style1 email" type="email" placeholder="Vôtre email svp" name="" id="">
+                    <input class="input-style1 sujet" type="text" placeholder="Sujet" name="" id="">
+                </div>
+                <textarea class="description" name="" id="" placeholder="description..." cols="30" rows="10"></textarea>
             </div>
             <button class="btn-sub" type ="submit">Envoyer</button>
             </form>
@@ -254,12 +266,61 @@
             </div>
         </div>
     </footer>
-    <!-- <section class="test">
-        <div class="octo"></div>
-        <div class="octo"></div>
-        <div class="octo"></div>
-        <div class="octo"></div>
-    </section> -->
-    <script  src="index.js"></script>
+    <script src="index.js"></script>
+    <script src = "https://unpkg.com/sweetalert/dist/sweetalert.min.js "></script> 
+    <script>
+        function validate(){
+            let name = document.querySelector(".name")
+            let prenom = document.querySelector(".prenom")
+            let email = document.querySelector(".email")
+            let sujet = document.querySelector(".sujet")
+            let description = document.querySelector(".description")
+            let submit = document.querySelector(".btn-sub")
+
+            submit.addEventListener("click", (e) => {
+                e.preventDefault()
+
+                if (name.value === "" || prenom.value === "" || email.value === ""|| sujet.value === "" || description.value === "") {
+                    error()
+                } else {
+                    sendEmail(name.value, prenom.value, email.value, description.value, sujet.value)
+                    success()
+                    
+                }
+            })
+            
+        }
+        validate()
+        function sendEmail(name, prenom, email, description, sujet  ){
+            emailjs.send("service_0g6f89s","template_2y7mbgn",{
+                to_name: "Nascimento marco",
+                from_name: `${name} ${prenom} et sont email : ${email}`,
+                sujet:`voici le sujet ${sujet} `,
+                message: `${description}`,
+            })
+        }
+        function success(){
+            swal({
+                title: "Good gob!",
+                text: "Message envoyer",
+                icon: "success",
+                button: "Fermer"
+            }) 
+        }
+        function error(){
+            swal({
+                    title: "Remplisser tous les champs",
+                    text: "Message not send",
+                    icon: "error",
+                    button: "Fermer"
+            })
+        }
+    </script>
+    
+        
+        
+        
+
+    
 </body>
 </html>
