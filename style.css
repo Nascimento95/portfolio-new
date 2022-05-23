@@ -137,7 +137,7 @@ h3{
 }
 .cv{
     margin-top: 20px;
-    width: 120px;
+    width: 130px;
     height: 30px;
     background: black;
     color: white;
@@ -263,10 +263,13 @@ height: 35px;
     align-items: center;
     justify-content:space-around;
 }
+
 .title-what-i-do{
     color: white;
     position: absolute;
-    left:50%
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 .ordi-icon{
     width: 50px;
@@ -448,17 +451,47 @@ textarea{
     background-size: cover;
     display: flex;
 }
+.filter-footer{
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+}
+.logo_society{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
 .title_dev{
     color: white;
 }
 .devTrotter{
     height: 60px;
+    margin-right: 20px;
+}
+.konexio{
+    height: 60px;
+    margin-right: 20px;
+}
+.container-logo-formation{
+    display: flex;
+    align-items: center;
 }
 .nav_footer{
-    display: block;
+    display: flex;
+    font-size: 20px;
+    width: 100%;
+    justify-content: space-between;
 }
 .a_footer{
     color:white;
+}
+.copy{
+    color: white;
 }
 
 
@@ -470,37 +503,6 @@ textarea{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-/* .octo{
-    width: 100px;
-    height: 100px;
-    border: 1px solid black;
-    background: url("/picture/battleship.png");
-    background-size: cover;
-    box-sizing : border-box;
-  position : relative;
-  width : 121.24356px;
-  height : 70px;
-  background-color : #008000;
-  margin : 35px 0;
-} */
-.octo:before,
-.octo:after {
-content : "";
-  box-sizing : border-box;
-  position : absolute;
-  width : 0;
-  border-left : 60.62178px solid transparent;
-  border-right : 60.62178px solid transparent;
-}
-.octo:after {
-  top : 100%;
-  width : 0;
-  border-top : 35px solid #008000;
-}
-.octo:before {
-  bottom : 100%;
-  border-bottom : 35px solid #008000;
 }
 
 /* media queries */
@@ -589,8 +591,11 @@ content : "";
     }
 }
 @media screen and (min-width: 100px) and (max-width: 619px) {
+    .picture-name{
+        margin-left: 10px;
+    }
     h1{
-        font-size: 25px;
+        font-size: 22px;
     }
     .my-name{
         display: none;
@@ -602,11 +607,14 @@ content : "";
         /* justify-content: center;
         align-items: center; */
     }
+    .title{
+        width: 46%;
+    }
     .my-profil{
-        height:50vh;
+        height:46vh;
     }
     .picture-me{
-        height: 50vh;
+        height: 46vh;
     }
 
     .about-me{
@@ -669,11 +677,11 @@ content : "";
     .what-i-do{
         height: 978px
     }
-    .title-what-i-do{
+    /* .title-what-i-do{
         color: white;
         position: absolute;
         left: 42%;
-    }
+    } */
     .filter{
         display: flex;
         flex-direction: column;
@@ -693,6 +701,7 @@ content : "";
         grid-column-gap: 20px;
         grid-row-gap: 70px;
     }
+    /* Contact */
     .adress{
         width: 50%;
     }
@@ -700,10 +709,13 @@ content : "";
         flex-direction: column;
         height: 500px;
     } 
+    .input-style1{
+        width: 45%;
+    }
     .form-contact{
         width: 50%;
     }
     .btn-sub{
-        width: 25% ;
+        width: 34% ;
     }
 }
